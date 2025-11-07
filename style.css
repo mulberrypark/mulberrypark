@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --main-color: #74092e;
+    --secondary-color: #000000;
+   /* --nav-color: #ffffff; */
+   /* --nav-text-color: #000000; */
+}
+
+body{
+    height: 100vh;
+/*    overflow: hidden; */
+    overflow: auto;
+    background: var(--primary-color);
+    transition: background 1s;
+}
+
+/* -----navbar----- */
+nav{
+    width: 100%;
+    height: 15vh;
+    padding: 20px 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+#logo-img{
+    height: 40px;
+    cursor: pointer;
+}
+
+#logo-text{
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    color: var(--nav-text-color);
+    transition: color 1s;
+}
+
+ /* Style the container with a rounded border, grey background and some padding and margin */
+.container {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+/* Clear floats after containers */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container img {
+  float: left;
+  margin-right: 20px;
+ /*  border-radius: 50%; */
+}
+
+/* Increase the font-size of a span element */
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+} 
+
+ul{
+    flex: 1;
+    text-align: right;
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    margin: 10px 20px;    
+}
+
+ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--nav-text-color);
+    transition: color 1s;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a:hover{
+    color: #c0b4cf;
+}
+
+.text-center {
+    color: var(--secondary-color);
+    transition: color 1s;
+    text-align: center !important; 
+}
+
+/* .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: var(--secondary-color);
+  transition: color 1s;
+  text-align: center;
+} */
+
+.footer {
+  text-align: center;
+  padding: 5px;
+  /* background-color: #abbaba; */
+  color: (--secondary-color);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #74092e;
+  color: white;
+}
