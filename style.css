@@ -166,3 +166,7 @@ ul li a:hover{
   background-color: #74092e;
   color: white;
 }
+
+b {
+  font-weight: bold;
+}
