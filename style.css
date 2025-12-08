@@ -167,6 +167,14 @@ ul li a:hover{
   color: white;
 }
 
+strong {
+    font-weight: bolder;
+}
+
 b {
-  font-weight: bold;
+  font-weight: 600
+}
+
+p.bold {
+   font-weight: 600;
 }
