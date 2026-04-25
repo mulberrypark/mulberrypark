@@ -178,3 +178,38 @@ b {
 p.bold {
    font-weight: 600;
 }
+
+.notice-block {
+  align-items: center;
+  height: 100px;
+  border: 3px solid #74092e; 
+}
+
+.blink {
+  animation: blinker 1.5s linear infinite;
+  color: #74092e;
+  font-size: 1.5em;
+  /* Larger, responsive font size */
+  margin-bottom: 20px;
+}
+
+@keyframes blinker {
+  50% {
+  opacity: 0;
+  }
+}
+
+.blink-center {
+  text-align: center;
+  animation: blinker 1.5s linear infinite;
+  color: #74092e;
+  font-size: 1.5em;
+  /* Larger, responsive font size */
+  margin-bottom: 20px;
+}
+
+@keyframes blinker {
+  50% {
+  opacity: 0;
+  }
+}
